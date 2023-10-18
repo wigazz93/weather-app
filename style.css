@@ -1,0 +1,172 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:regular,500,600,700,800,900);
+
+body {
+  min-height: 100vh;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+.header {
+  background: linear-gradient(180deg, #18323d 0%, rgba(54, 123, 152, 0) 100%);
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin-top: 40px;
+  color: #fce9e9;
+  text-align: center;
+  font-family: Maven Pro;
+  font-size: 42px;
+  font-weight: 400;
+
+  letter-spacing: 4.1px;
+}
+.form {
+  width: 500px;
+  height: 34px;
+  margin-top: 30px;
+  border-radius: 15px;
+  /*border: none;*/
+  display: flex;
+
+  background: #fef9f9;
+}
+.input {
+  background: transparent;
+  border-radius: 15px 0 0 15px;
+  flex-grow: 1;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  background: #fef9f9;
+  padding-left: 15px;
+}
+input::placeholder {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+  opacity: 0.5;
+}
+.btn {
+  border: none;
+  border-radius: 0 15px 15px 0;
+  height: 34px;
+  padding: 0 10px 0 10px;
+  background: #577482;
+  color: #fdf8f8;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in;
+}
+.btn:hover {
+  color: #18323d;
+  background-color: rgba(131, 177, 162, 0.664);
+
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 35px 33px 10px 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: start;
+  margin-top: 66px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 374px;
+  height: 220px;
+  background: #fcf6f6;
+  box-shadow: 0px 8px 50px 5px rgba(38, 64, 76, 0.31);
+}
+.card::before {
+  border-radius: 5px;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 11px;
+  right: 8px;
+  position: absolute;
+  background: #fcf6f6;
+  box-shadow: 0px 8px 50px 5px rgba(38, 64, 76, 0.31);
+}
+.card-city {
+  color: #577482;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.card-weather {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-value {
+  color: #577482;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.6px;
+
+  position: relative;
+}
+sup {
+  font-size: 32px;
+  color: rgba(87, 116, 130, 0.52);
+  position: absolute;
+  top: 2px;
+}
+.card-img {
+  margin-right: 50px;
+}
+.card-description {
+  color: #577482;
+  text-align: center;
+  font-family: Niramit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.footer {
+  /*flex: 0 0 auto;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 41px;
+  background: rgba(87, 116, 130, 0.72);
+  color: #fffcfc;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Niramit;
+  font-size: 22px;
+  letter-spacing: 2.1px;
+  text-decoration-line: underline;
+  transition: all 0.5s ease-in;
+}
+.footer:hover {
+  color: #18323d;
+  background-color: rgba(131, 177, 162, 0.664);
+}
