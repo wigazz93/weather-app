@@ -11,22 +11,22 @@
       <h1 class="title">Weather</h1>
       <form class="form" action="#">
         <input
-          class="input"
+          class="input-city"
           type="text"
           placeholder="Введите название города"
         />
         <button class="btn" type="submit">Показать</button>
       </form>
     </header>
-    <main>
-      <div class="card">
+    <main id="main">
+      <!--<div class="card">
         <h2 class="card-city">London <span>GB</span></h2>
         <div class="card-weather">
           <div class="card-value">
             13<sup><small>&#8451;</small></sup>
           </div>
           <img
-            src="../images/8.png"
+            src="../images/day/Sunny.png"
             width="100"
             height="100"
             alt="cloud"
@@ -34,13 +34,14 @@
           />
         </div>
         <div class="card-description">Clouds</div>
-      </div>
+      </div>-->
     </main>
     <footer>
-      <a href="http://amatar.info/" target="_blank" class="footer"
+      <a href="https://www.accuweather.com/" target="_blank" class="footer"
         >Weather forecast</a
       >
     </footer>
-    <script src="main.js"></script>
+    <script src="./conditions.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>

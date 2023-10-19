@@ -35,7 +35,7 @@ body {
 
   background: #fef9f9;
 }
-.input {
+.input-city {
   background: transparent;
   border-radius: 15px 0 0 15px;
   flex-grow: 1;
@@ -45,7 +45,7 @@ body {
   background: #fef9f9;
   padding-left: 15px;
 }
-input::placeholder {
+.input-city::placeholder {
   position: relative;
   top: 2px;
   font-size: 18px;
@@ -78,7 +78,7 @@ main {
 
 .card {
   border-radius: 5px;
-  padding: 35px 33px 10px 25px;
+  padding: 35px 33px 25px 25px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 374px;
-  height: 220px;
+  /*height: 220px;*/
   background: #fcf6f6;
   box-shadow: 0px 8px 50px 5px rgba(38, 64, 76, 0.31);
 }
@@ -106,13 +106,20 @@ main {
 }
 .card-city {
   color: #577482;
-  text-align: center;
+  text-align: left;
   font-family: Niramit;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.6px;
+}
+span {
+  display: inline-block;
+  background-color: #d6dcdf;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 18px;
 }
 .card-weather {
   display: flex;
@@ -169,4 +176,8 @@ sup {
 .footer:hover {
   color: #18323d;
   background-color: rgba(131, 177, 162, 0.664);
+}
+.er {
+  font-size: 24px;
+  color: rgb(172, 38, 38);
 }
